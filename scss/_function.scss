@@ -1,0 +1,30 @@
+@mixin size($w, $h, $bdr:unset, $bxs: 10px 10px 20px grey) {
+    width: $w;
+    height: $h;
+    border-radius: $bdr;
+    box-shadow: $bxs;
+}
+
+@mixin font($fz:18px, $fw:400, $lh:50px, $cl: black) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $cl;
+    line-height: $lh;
+}
+
+@mixin flex($jc:center, $ai:center, $fd:column) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color: lavenderblush;
+}
