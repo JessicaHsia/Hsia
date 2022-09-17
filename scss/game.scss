@@ -38,7 +38,7 @@ header > input {
 
 main {
     position: absolute;
-    min-width: 100%;
+    min-width: 90%;
     height: 100vh;
     @include flex();
     display: none;
