@@ -50,21 +50,21 @@ main {
 }
 
 .score {
-    @include size(150px, 80px, 40%, 5px 5px 30px gold);
-    @include font(30px, 600, none, brown);
+    @include size(130px, 60px, 40%, 5px 5px 30px gold);
+    @include font(25px, 600, none, brown);
     @include flex(center, center, none);
     letter-spacing: 3px;
 }
 
 .timeLine {
-    @include size(200px, 50px, 10px);
-    @include font (30px, 600, none, brown);
+    @include size(150px, 50px, 10px);
+    @include font (25px, 600, none, brown);
     @include flex();
     background-color: lightgoldenrodyellow;
 }
 
 .square_container {
-    @include size(400px, 400px, 10px, unset);
+    @include size(350px, 350px, 10px, unset);
     background-color: #fff;
     @include flex(space-between, center, unset);
     flex-wrap: wrap;
@@ -87,9 +87,9 @@ main {
 }
 
 .main_down > input{
-    @include size(150px, 50px, 10px);
+    @include size(130px, 50px, 10px);
     background-color: lightblue; 
-    @include font(18px, 600, none, peru);
+    @include font(16px, 600, none, peru);
     @include flex();
 }
 
