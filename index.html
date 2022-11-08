@@ -20,6 +20,10 @@
             <li>點對顏色+5分並進入下一個關卡</li>
             <li>點錯顏色方塊或是提示都會扣 -5分</li>
             <li>GO!GO!加油喔！</li>
+            <p>
+                此網站為教育用 This webside is for education only
+                勞動部中彰投分屬-前端UI與JS框架(Vue)工程師培訓班
+            </p>
         </ul>
     </header>
 
@@ -131,9 +135,9 @@
 
             //方塊生成
 
-             r = Math.floor(Math.random()* 200)
-             g = Math.floor(Math.random()* 200)
-             b = Math.floor(Math.random()* 200)
+            r = Math.floor(Math.random() * 200)
+            g = Math.floor(Math.random() * 200)
+            b = Math.floor(Math.random() * 200)
 
             ans = Math.floor(Math.random() * (squarelevel * squarelevel));
 
@@ -159,7 +163,7 @@
             var timer1 = setInterval(function () { //匿名function
                 timeleft = timeleft - 1; //開始倒數
                 timeLine.innerHTML = 'Time:  ' + timeleft + 'S'
-                if(timeleft == 0 || gameScore.innerHTML >= 100){
+                if (timeleft == 0 || gameScore.innerHTML >= 100) {
                     clearInterval(timer1); //停止倒數
                     //將遊戲視窗區塊隱藏
                     timeLine.classList.remove('timeLine');//移除時間的css
@@ -176,13 +180,13 @@
                     main.classList.add('close'); //遊戲頁面隱藏
                     scoreSum.innerHTML = gameScore.innerHTML;
                     gameScore.innerHTML = '';
-                    if(scoreSum.innerHTML >= 90){
+                    if (scoreSum.innerHTML >= 90) {
                         conment.innerHTML = '鷹眼來著！';
-                    }else if(scoreSum.innerHTML < 90 && scoreSum.innerHTML >= 60 ){
+                    } else if (scoreSum.innerHTML < 90 && scoreSum.innerHTML >= 60) {
                         conment.innerHTML = '還行，可能手抖了一下';
-                    }else if(scoreSum.innerHTML < 60 && scoreSum.innerHTML >= 30){
+                    } else if (scoreSum.innerHTML < 60 && scoreSum.innerHTML >= 30) {
                         conment.innerHTML = '去看看遠方的樹木🌲，再來一次';
-                    }else{
+                    } else {
                         conment.innerHTML = '這....要練練喔！眼睛請張開！';
                     }
                 }

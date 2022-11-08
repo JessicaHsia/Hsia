@@ -20,12 +20,15 @@ header {
 
 ul{
     @include flex();
+    li {
+        list-style: none;
+        @include font(20px, 600);
+    }
+    p{
+        @include font(9px, 400);
+    }    
 }
 
-li {
-    list-style: none;
-    @include font(20px, 600);
-}
 
 
 header > input {

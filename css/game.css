@@ -38,11 +38,16 @@ ul {
   align-items: center;
   flex-direction: column;
 }
-
-li {
+ul li {
   list-style: none;
   font-size: 20px;
   font-weight: 600;
+  color: black;
+  line-height: 50px;
+}
+ul p {
+  font-size: 9px;
+  font-weight: 400;
   color: black;
   line-height: 50px;
 }
@@ -63,7 +68,7 @@ header > input {
 
 main {
   position: absolute;
-  min-width: 100%;
+  min-width: 90%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -82,11 +87,11 @@ main {
 }
 
 .score {
-  width: 150px;
-  height: 80px;
+  width: 130px;
+  height: 60px;
   border-radius: 40%;
   box-shadow: 5px 5px 30px gold;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   color: brown;
   line-height: none;
@@ -98,11 +103,11 @@ main {
 }
 
 .timeLine {
-  width: 200px;
+  width: 150px;
   height: 50px;
   border-radius: 10px;
   box-shadow: 10px 10px 20px grey;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   color: brown;
   line-height: none;
@@ -114,8 +119,8 @@ main {
 }
 
 .square_container {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border-radius: 10px;
   box-shadow: unset;
   background-color: #fff;
@@ -146,12 +151,12 @@ main {
 }
 
 .main_down > input {
-  width: 150px;
+  width: 130px;
   height: 50px;
   border-radius: 10px;
   box-shadow: 10px 10px 20px grey;
   background-color: lightblue;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: peru;
   line-height: none;
